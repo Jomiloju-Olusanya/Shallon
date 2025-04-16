@@ -1,0 +1,183 @@
+:root {
+    --primary-color: #d80000;
+    --secondary-color: #007aff;
+    --light-bg: #f9f9f9;
+    --dark-text: #222;
+    --white: #ffffff;
+    --card-shadow: rgba(0, 0, 0, 0.05);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--light-bg);
+    color: var(--dark-text);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--secondary-color);
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.hero {
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    color: var(--white);
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-inline: auto;
+}
+
+.btn {
+    background-color: var(--white);
+    color: var(--primary-color);
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--secondary-color);
+    color: var(--white);
+}
+
+.services {
+    padding: 3rem 2rem;
+    background-color: var(--white);
+    text-align: center;
+}
+
+.services h2 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.card {
+    background-color: var(--white);
+    border-radius: 8px;
+    padding: 2rem;
+    max-width: 280px;
+    box-shadow: 0 4px 10px var(--card-shadow);
+    transform: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.card p {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 3rem;
+}
+
+@media (max-width: 600px) {
+    nav {
+        display: none;
+        width: 100%;
+        background-color: var(--primary-color);
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 1rem 0;
+        gap: 0;
+    }
+
+    nav ul li {
+        padding: 0.5rem 1.5rem;
+    }
+
+    nav ul li a {
+        display: block;
+        width: 100%;
+    }
+
+    nav.show {
+        display: block;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
