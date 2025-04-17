@@ -182,6 +182,10 @@ footer {
     display: block;
 }
 
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
 @media (max-width: 600px) {   
     nav {
         display: none;
@@ -224,6 +228,25 @@ footer {
     }
 
     .menu-toggle {
+        display: block;
+    }
+
+    .dropdown {
+        width: 100%;
+    }
+
+    .dropdown-menu {
+        position: static;
+        background-color: var(--primary-color);
+        box-shadow: none;
+    }
+
+    .dropdown-menu li {
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        padding-left: 2rem;
+    }
+
+    .dropdown:hover .dropdown-menu {
         display: block;
     }
 }
