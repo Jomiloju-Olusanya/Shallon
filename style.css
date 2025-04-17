@@ -22,10 +22,10 @@ body {
 
 header {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
+    flex-direction: column;
     background-color: var(--primary-color);
+    color: var(--white);
+    padding: 1 rem;
 }
 
 .top-bar {
@@ -33,7 +33,7 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 1rem 2rem;
+    padding: 1.5rem 2rem;
 }
 
 .logo {
@@ -52,18 +52,8 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
-    /* flex-wrap: wrap; */
-    gap: 2rem;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li a {
-    color: var(--white);
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-weight: 500;
-    transition: color 0.3s ease;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 nav a {
@@ -73,8 +63,8 @@ nav a {
     transition: 0.3s ease;
 }
 
-nav ul li a:hover {
-    color: #dbe6ff;
+nav a:hover {
+    color: var(--secondary-color);
 }
 
 .menu-toggle {
