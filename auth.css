@@ -88,9 +88,17 @@ input {
         max-width: 100%;
         border-radius: 10px;
     }
-}
 
-.auth-container h2 {
-    font-size: 1.6rem;
-    text-align: center;
+    .auth-container h2 {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    .auth-container p {
+        text-align: center;
+    }
+
+    input::placeholder {
+        text-align: center;
+    }
 }
