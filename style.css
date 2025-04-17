@@ -27,7 +27,7 @@ header {
     background-color: var(--primary-color);
     color: var(--white);
     padding: 1rem;
-    position: static;
+    position: fixed;
 }
 
 .top-bar {
