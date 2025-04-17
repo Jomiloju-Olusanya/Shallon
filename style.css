@@ -245,7 +245,7 @@ footer {
         display: block;
     }
 
-    /* Dropdown Styles */
+   /* Dropdown Styles
     .dropdown {
         width: 100%;
     }
@@ -264,12 +264,4 @@ footer {
     .dropdown:hover .dropdown-menu {
         display: block;
     }
-
-    .dropdown-toggle {
-        padding: 0;
-    }
-
-    .dropdown-icon {
-        display: none;
-    }
-}
+} */
