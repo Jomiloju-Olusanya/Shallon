@@ -156,21 +156,32 @@ footer {
         display: none;
         width: 100%;
         background-color: var(--primary-color);
+        padding: 1.5rem 0;
+        box-shadow: 0 0.4px 8px rgba(0, 0, 0, 0.1);
     }
 
     nav ul {
         flex-direction: column;
-        padding: 1rem 0;
+        padding: 0;
         gap: 0;
+        margin: 0;
     }
 
     nav ul li {
-        padding: 0.5rem 1.5rem;
+        padding: 1rem 1.5rem;
+        border-bottom: 1px solid rgab(255, 255, 255, 0.1);
+    }
+
+    nav ul li:last-child {
+        border-bottom: none;
     }
 
     nav ul li a {
         display: block;
         width: 100%;
+        font-size: 1rem;
+        font-weight: 500;
+        color: var(--white);
     }
 
     nav.show {
