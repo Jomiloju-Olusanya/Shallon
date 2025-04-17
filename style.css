@@ -43,8 +43,6 @@ header {
     font-weight: bold;
 }
 
-
-
 nav ul {
     list-style: none;
     display: flex;
@@ -158,17 +156,20 @@ footer {
 @media (max-width: 600px) {   
     nav {
         display: none;
+        flex-direction: column;
         width: 100%;
         background-color: var(--primary-color);
-        padding: 1.5rem 0;
-        box-shadow: 0 0.4px 8px rgba(0, 0, 0, 0.1);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        padding: 1rem 0;
+        box-shadow: 0 0.4px 8px var(--card-shadow);
     }
 
     nav ul {
         flex-direction: column;
-        padding: 0;
+        width: 100%;
         gap: 0;
-        margin: 0;
     }
 
     nav ul li {
@@ -189,7 +190,7 @@ footer {
     }
 
     nav.show {
-        display: block;
+        display: flex;
     }
 
     .menu-toggle {
