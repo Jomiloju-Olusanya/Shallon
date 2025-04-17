@@ -159,10 +159,10 @@ footer {
         flex-direction: column;
         width: 100%;
         background-color: var(--primary-color);
-        position: absolute;
+        position: absolute sticky;
         top: 100%;
         left: 0;
-        padding: 1rem 0;
+        padding: 1.5rem 0;
         box-shadow: 0 0.4px 8px var(--card-shadow);
     }
 
