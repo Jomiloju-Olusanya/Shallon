@@ -186,6 +186,20 @@ footer {
     display: block;
 }
 
+.dropdown-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    color: var(--white);
+    padding: 0.8rem 1.5rem;
+}
+
+.dropdown-icon {
+    font-size: 1.2rem;
+    margin-left: 0.5rem;
+}
+
 @media (max-width: 600px) {   
     nav {
         display: none;
@@ -231,6 +245,7 @@ footer {
         display: block;
     }
 
+    /* Dropdown Styles */
     .dropdown {
         width: 100%;
     }
@@ -248,5 +263,15 @@ footer {
 
     .dropdown:hover .dropdown-menu {
         display: block;
+    }
+}
+
+@media (min-width: 601px) {
+    .dropdown-toggle {
+        padding: 0;
+    }
+
+    .dropdown-icon {
+        display: none;
     }
 }
