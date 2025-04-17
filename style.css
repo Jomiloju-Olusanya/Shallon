@@ -159,7 +159,7 @@ footer {
         flex-direction: column;
         width: 100%;
         background-color: var(--primary-color);
-        position: absolute sticky;
+        position: sticky;
         top: 100%;
         left: 0;
         padding: 1.5rem 0;
