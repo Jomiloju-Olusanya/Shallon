@@ -81,6 +81,32 @@ input {
     font-weight: bold;
 }
 
+.mobile-nav {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: var(--white);
+    justify-content: space-between;
+    max-width: 600px;
+    margin: 0 auto;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.back-arrow {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: var(--white);
+}
+
+.logo-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+    flex: 1;
+    text-align: center;
+    margin-right: 1.5rem;
+}
+
 @media (max-width: 600px) {
     .auth-container {
         padding: 1.5rem 1rem;
