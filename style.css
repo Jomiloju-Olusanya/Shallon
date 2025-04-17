@@ -25,7 +25,7 @@ header {
     flex-direction: column;
     background-color: var(--primary-color);
     color: var(--white);
-    padding: 1 rem;
+    padding: 1rem;
 }
 
 .top-bar {
@@ -41,13 +41,13 @@ header {
     font-weight: bold;
 }
 
-/* nav {
+nav {
     display: flex;
     justify-content: flex-end;
     background-color: var(--primary-color);
     padding: 1.5rem 2rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-} */
+}
 
 nav ul {
     list-style: none;
@@ -178,7 +178,7 @@ footer {
 
     nav ul li {
         padding: 1rem 1.5rem;
-        border-bottom: 1px solid rgab(255, 255, 255, 0.1);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
 
     nav ul li:last-child {
