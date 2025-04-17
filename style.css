@@ -43,10 +43,13 @@ header {
     font-weight: bold;
 }
 
+
+
 nav ul {
     list-style: none;
     display: flex;
-    gap: 1.5rem;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 nav a {
