@@ -97,8 +97,4 @@ input {
     .auth-container p {
         text-align: center;
     }
-
-    input::placeholder {
-        text-align: center;
-    }
 }
