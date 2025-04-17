@@ -1,0 +1,78 @@
+:root {
+    --primary-color: #d80000;
+    --secondary-color: #007aff;
+    --white: #fff;
+    --bg-light: #f4f4f4;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--bg-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.auth-container {
+    width: 100%;
+    max-width: 400px;
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.form-box {
+    display: block;
+}
+
+.form-box.hidden {
+    display: none;
+}
+
+h2 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+p {
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.btn {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    background-color: var(--primary-color);
+    columns: var(--white);
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: var(--secondary-color);
+}
+
+.switch-text {
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.switch-text a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
