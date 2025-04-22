@@ -81,16 +81,20 @@ input {
     font-weight: bold;
 }
 
-.form-extra {
+.remember-wrap {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     font-size: 0.9rem;
 }
 
 .remember-me input {
     margin-right: 0.5rem;
+}
+
+.forgot-wrap {
+    text-align: center;
+    margin-top: 1rem;
 }
 
 .forgot-password {
