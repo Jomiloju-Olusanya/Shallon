@@ -81,6 +81,28 @@ input {
     font-weight: bold;
 }
 
+.form-extra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.remember-me input {
+    margin-right: 0.5rem;
+}
+
+.forgot-password {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-weight: 500;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
 @media (max-width: 600px) {
     .auth-container {
         padding: 1.5rem 1rem;
