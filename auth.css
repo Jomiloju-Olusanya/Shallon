@@ -84,24 +84,14 @@ input {
 .remember-wrap {
     display: flex;
     align-items: center;
-    gap: 8px;
-    margin-bottom: 1rem;
-    line-height: 1;
-    /* font-size: 0.9rem; */
+    gap: 0.5rem;
+    cursor: pointer;
 }
 
-.remember-me input[type="checkbox"] {
-    display: inline-block;
+.remember-me input {
     width: 16px;
     height: 16px;
-    margin: 0;
-    padding: 0;
-    vertical-align: middle;
-}
-
-.remember-me label {
-    margin: 0;
-    line-height: 1;
+    cursor: pointer;
 }
 
 .forgot-wrap {
