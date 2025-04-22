@@ -88,8 +88,17 @@ input {
     font-size: 0.9rem;
 }
 
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
 .remember-me input {
-    margin-right: 0.2rem;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
 }
 
 .forgot-wrap {
