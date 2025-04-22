@@ -99,6 +99,11 @@ input {
     vertical-align: middle;
 }
 
+.remember-me label {
+    margin: 0;
+    line-height: 1;
+}
+
 .forgot-wrap {
     text-align: center;
     margin-top: 1rem;
