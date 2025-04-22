@@ -83,6 +83,7 @@ input {
 
 .remember-wrap {
     display: flex;
+    justify-content: center;
     align-items: center;
     margin-bottom: 1rem;
     font-size: 0.9rem;
@@ -90,6 +91,7 @@ input {
 
 .remember-me {
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 0.5rem;
     cursor: pointer;
