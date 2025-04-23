@@ -11,7 +11,7 @@
         <div class="form-box">
             <h2>Welcome Back</h2>
             <p>Login to your Shallon Account</p>
-            <form action="dashboard.html" method="POST">
+            <form action="dashboard.html" method="POST" id="login-form">
                 <input type="email" placeholder="Email Address" required>
                 <input type="password" placeholder="Password" required>
 
@@ -61,5 +61,7 @@
             document.querySelectorAll('.form-box').forEach(box => box.classList.toggle('hidden'));
         }
     </script>
+
+    <script src="login.js"></script>
 </body>
 </html>
