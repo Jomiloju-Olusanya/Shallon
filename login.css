@@ -38,12 +38,15 @@ body {
 
 h2 {
     color: var(--primary-color);
+    margin-top: 1rem;
     margin-bottom: 0.5rem;
+    text-align: center;
 }
 
 p {
     margin-bottom: 1rem;
     color: #555;
+    text-align: center;
 }
 
 input {
