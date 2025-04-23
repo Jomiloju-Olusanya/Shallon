@@ -121,6 +121,18 @@ input {
     text-decoration: underline;
 }
 
+.note {
+    margin-top: 15px;
+    font-size: 13px;
+    text-align: center;
+    color: #444;
+}
+
+.note a {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
 @media (max-width: 600px) {
     .auth-container {
         padding: 1.5rem 1rem;
