@@ -121,6 +121,9 @@ body {
 }
 
 .btn-fund-wallet {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
     padding: 12px 24px;
     background-color: var(--secondary-color);
     color: var(--white);
@@ -128,7 +131,6 @@ body {
     border-radius: 8px;
     font-size: 16px;
     font-weight: bold;
-    cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
