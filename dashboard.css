@@ -113,6 +113,29 @@ body {
     color: var(--primary-color);
 }
 
+.fund-wallet-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.btn-fund-wallet {
+    padding: 12px 24px;
+    background-color: var(--secondary-color);
+    color: var(--white);
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-fund-wallet:hover {
+    background-color: #0056cc;
+}
+
 .card {
     background-color: var(--white);
     padding: 20px;
