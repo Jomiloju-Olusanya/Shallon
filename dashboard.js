@@ -17,19 +17,22 @@ toggleBtn.addEventListener('click', () => {
 });
 
 const toggleBtn = document.getElementById('toggleBalance');
-const balance = document.getElementById('walletBalance');
+const walletBalance = document.getElementById('walletBalance');
+  let isVisible = false;
+  const actualBalance = '&#8358;10,500';
 
-let isVisible = false;
-
-toggleBtn.addEventListener('click', () => {
-  if (isVisible) {
-    balance.innerHTML = '&#8358;****';
-    balance.classList.remove('visible-balance');
-    balance.classList.add('hidden-balance');
-  } else {
-    balance.innerHTML = '&#8358;10,500';
-    balance.classList.remove('hidden-balance');
-    balance.classList.add('visible-balance');
-  }
-  isVisible = !isVisible;
-});
+  toggleBtn.addEventListener('click', () => {
+    isVisible = !isVisible;
+    
+    if (isVisible) {
+      walletBalance.innerHTML = actualBalance;
+      walletBalance.classList.remove('hidden-balance');
+      walletBalance.classList.add('visible-balance');
+      toggleBtn.textContent = '👁️'; // eye open
+    } else {
+      walletBalance.innerHTML = '&#8358;****';
+      walletBalance.classList.remove('visible-balance');
+      walletBalance.classList.add('hidden-balance');
+      toggleBtn.textContent = '🙈'; // eye off
+    }
+  });
