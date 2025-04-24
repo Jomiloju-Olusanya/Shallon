@@ -6,6 +6,12 @@
     --text-dark: #333;
 }
 
+.wallet-header h1 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: var(--primary-color);
+}
+
 .wallet-form-section {
     max-width: 500px;
     margin: 0 auto;
