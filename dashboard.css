@@ -105,6 +105,14 @@ body {
     gap: 20px;
 }
 
+.eye-toggle {
+    margin-left: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    vertical-align: middle;
+    color: var(--primary-color);
+}
+
 .card {
     background-color: var(--white);
     padding: 20px;
