@@ -6,6 +6,10 @@
     --text-dark: #333;
 }
 
+body {
+    font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .dashboard-tiles {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
