@@ -1,0 +1,53 @@
+:root {
+    --primary-color: #d80000;
+    --secondary-color: #007aff;
+    --white: #fff;
+    --bg-light: #f4f4f4;
+    --text-dark: #333;
+}
+
+.wallet-form-section {
+    max-width: 500px;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+.form-card {
+    background-color: var(--white);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+}
+
+.form-card label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: 600;
+}
+
+.form-card input,
+.form-card select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.primary-btn {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+.primary-btn:hover {
+    background-color: #b80000;
+}
