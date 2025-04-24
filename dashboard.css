@@ -171,6 +171,10 @@ body {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
     transition: all 0.3s ease;
     cursor: pointer;
+
+    display: block;
+    text-decoration: none;
+    color: var(--text-dark);
 }
 
 .tile:hover {
