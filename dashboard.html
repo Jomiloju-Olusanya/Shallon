@@ -7,28 +7,46 @@
     <link rel="stylesheet" href="dashboard.css">
 </head>
 <body>
-    <div class="dashboard">
+    <div class="dashboard-container">
+        <!-- Sidebar -->
         <aside class="sidebar">
-            <div class="profile">
-                <img src="avatar.png" alt="User Avatar" class="avatar">
-                <p>Hello, Jyay</p>
+            <div class="sidebar-header">
+                <h2>Shallon</h2>
             </div>
-            <nav class="nav-links">
-                <a href="#" class="active">Dashboard</a>
-                <a href="#">Wallet</a>
+            <nav class="sidebar-nav">
+                <a href="#" class="nav-link active">Home</a>
+                <a href="#">Savings</a>
+                <a href="#">Loans</a>
                 <a href="#">Transactions</a>
                 <a href="#">Settings</a>
+                <a href="#">More</a>
+                <a href="#" class="logout">Logout</a>
             </nav>
-            <div class="logout">
-                <a href="#">Logout</a>
-            </div>
         </aside>
 
-        <main class="main-content">
-            <h1>Welcome to your Dashboard</h1>
-            <p>Let's manage your savings, loans, and utilities easily.</p>
-            <!-- More dashboard widgets will go here -->
-        </main>
+        <!-- Main Content -->
+         <main class="main-content">
+            <header class="dashboard-header">
+                <h1>Hello, Jyay</h1>
+            </header>
+
+            <section class="overview-cards">
+                <div class="card">
+                    <h3>Wallet Balance</h3>
+                    <p>&#8358;10,500</p>
+                </div>
+                <div class="card">
+                    <h3>Last Login</h3>
+                    <p>April 23, 2025</p>
+                </div>
+                <div class="card">
+                    <h3>Active Plans</h3>
+                    <p>3 Services</p>
+                </div>
+            </section>
+         </main>
     </div>
+
+    <script src="dashboard.js"></script>
 </body>
 </html>
