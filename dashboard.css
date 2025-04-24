@@ -132,3 +132,66 @@ body {
     color: #555;
     font-size: 14px;
 }
+
+@media (max-width: 600px) {
+    .dashboard-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px 0;
+        overflow-x: auto;
+    }
+
+    .sidebar-header {
+        display: none;
+    }
+
+    .sidebar-nav {
+        margin: 0;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .sidebar-nav a {
+        padding: 8px 12px;
+        font-size: 14px;
+        white-space: nowrap;
+    }
+
+    .logout {
+        display: none;
+    }
+
+    .main-content {
+        padding: 20px;
+    }
+
+    .dashboard-header h1 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .overview-cards,
+    .dashboard-tiles {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .card,
+    .tile {
+        padding: 15px;
+    }
+
+    .tile h3 {
+        font-size: 16px;
+    }
+
+    .tile p {
+        font-size: 13px;
+    }
+}
