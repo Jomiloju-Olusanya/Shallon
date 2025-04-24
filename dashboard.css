@@ -107,20 +107,10 @@ body {
 
 .eye-toggle {
     margin-left: 10px;
-    font-size: 18px;
+    font-size: 16px;
     cursor: pointer;
     vertical-align: middle;
     color: var(--primary-color);
-}
-
-.hidden-balance {
-    letter-spacing: 5px;
-    color: #999;
-}
-
-.visible-balance {
-    color: #555;
-    letter-spacing: normal;
 }
 
 .fund-wallet-card {
