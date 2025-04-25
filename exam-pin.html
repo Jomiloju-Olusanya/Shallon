@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TV Subscription | Shallon</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="wallet.css">
+    <link rel="stylesheet" href="buy-data.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar Toggle for Mobile -->
+         <div class="mobile-header">
+            <button class="hamburger" id="sidebarToggle">&#9776;</button>
+            <div class="mobile-logo">Shallon</div>
+         </div>
+
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h2>Shallon</h2>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="dashboard.html" class="nav-link active">Home</a>
+                <a href="wallet.html">Wallet</a>
+                <a href="#">Savings</a>
+                <a href="#">Loans</a>
+                <a href="#">Transactions</a>
+                <a href="#">Settings</a>
+                <a href="#">More</a>
+                <a href="index.html" class="logout">Logout</a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="wallet-header">
+                <h1>Buy Exam Pin</h1>
+            </header>
+
+            <section class="form-section">
+                <form action="#" class="exam-form">
+                    <div class="form-group">
+                        <label for="exam-type">Select Exam Type</label>
+                        <select name="exam-type" id="exam-type" required>
+                            <option value="">--Choose--</option>
+                            <option value="waec">WAEC</option>
+                            <option value="neco">NECO</option>
+                            <option value="nabteb">NABTEB</option>
+                            <option value="jamb">JAMB</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="quantity">Quantity</label>
+                        <input type="number" id="quantity" placeholder="1" min="1" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Delivery Email</label>
+                        <input type="email" id="email" placeholder="Enter email to receive PIN(s)" required>
+                    </div>
+
+                    <button type="submit" class="primary-btn">Subscribe Now</button>
+                </form>
+            </section>
+        </main>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>

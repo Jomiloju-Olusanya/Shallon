@@ -18,14 +18,16 @@
 .data-form .form-group,
 .airtime-form .form-group,
 .electricity-form .form-group,
-.tv-form .form-group {
+.tv-form .form-group,
+.exam-form .form-group {
     margin-bottom: 20px;
 }
 
 .data-form label,
 .airtime-form label,
 .electricity-form label,
-.tv-form label {
+.tv-form label,
+.exam-form label {
     display: block;
     margin-bottom: 8px;
     font-weight: 600;
@@ -39,7 +41,9 @@
 .electricity-form input,
 .electricity-form select,
 .tv-form input,
-.tv-form select {
+.tv-form select,
+.exam-form input,
+.exam-form select {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
