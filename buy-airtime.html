@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buy Data | Shallon</title>
+    <title>Buy Airtime | Shallon</title>
     <link rel="stylesheet" href="dashboard.css">
     <link rel="stylesheet" href="wallet.css">
     <link rel="stylesheet" href="buy-data.css">
@@ -36,13 +36,13 @@
         <!-- Main Content -->
         <main class="main-content">
             <header class="wallet-header">
-                <h1>Buy Data</h1>
+                <h1>Buy Airtime</h1>
             </header>
 
             <section class="form-section">
-                <form class="data-form" action="#" method="#">
+                <form action="#" method="#" class="airtime-form">
                     <div class="form-group">
-                        <label for="network">Select Newtork</label>
+                        <label for="network">Select Network</label>
                         <select name="network" id="network" required>
                             <option value="">--Choose--</option>
                             <option value="mtn">MTN</option>
@@ -53,15 +53,8 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="plan">Select Data Plan</label>
-                        <select name="plan" id="plan" required>
-                            <option value="">--Choose--</option>
-                            <option value="500m">500MB - &#8358;</option>
-                            <option value="1gb">1GB - &#8358;</option>
-                            <option value="2gb">2GB - &#8358;</option>
-                            <option value="5gb">5GB - &#8358;</option>
-                            <option value="10gb">10GB - &#8358;</option>
-                        </select>
+                        <label for="amount">Enter Amount (&#8358;)</label>
+                        <input type="number" id="amount" placeholder="&#8358;1000" required>
                     </div>
 
                     <div class="form-group">
@@ -69,12 +62,9 @@
                         <input type="tel" id="phone" placeholder="080XXXXXXXX" required>
                     </div>
 
-                    <button type="submit" class="primary-btn">Buy Data</button>
+                    <button type="submit" class="primary-btn">Buy Airtime</button>
                 </form>
             </section>
         </main>
-    </div>
-
-    <script src="dashboard.js"></script>
 </body>
 </html>
