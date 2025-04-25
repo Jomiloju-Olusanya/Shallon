@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buy Exam Pin | Shallon</title>
+    <title>Support | Shallon</title>
     <link rel="stylesheet" href="dashboard.css">
     <link rel="stylesheet" href="wallet.css">
     <link rel="stylesheet" href="buy-data.css">
@@ -36,33 +36,41 @@
         <!-- Main Content -->
         <main class="main-content">
             <header class="wallet-header">
-                <h1>Buy Exam Pin</h1>
+                <h1>Contact Support</h1>
             </header>
 
             <section class="form-section">
-                <form action="#" class="exam-form">
+                <p>If you're having any issues, feel free to contact us by filling out the form below or hit the chat/live support button. Our support team is available 24/7.</p>
+
+                <form action="#" class="support-form">
                     <div class="form-group">
-                        <label for="exam-type">Select Exam Type</label>
-                        <select name="exam-type" id="exam-type" required>
-                            <option value="">--Choose--</option>
-                            <option value="waec">WAEC - &#8358;</option>
-                            <option value="neco">NECO - &#8358;</option>
-                            <option value="nabteb">NABTEB - &#8358;</option>
-                            <option value="jamb">JAMB - &#8358;</option>
+                        <label for="fullname">Full Name</label>
+                        <input type="text" id="fullname" placeholder="Your full name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" placeholder="Your email address" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="issue">Issue</label>
+                        <select name="issue" id="issue" required>
+                            <option value="">--Select an Issue--</option>
+                            <option value="login">Login Problem</option>
+                            <option value="transaction">Transaction Issue</option>
+                            <option value="Purchase">Service Purchase</option>
+                            <option value="wallet">Wallet Funding</option>
+                            <option value="other">Other</option>
                         </select>
                     </div>
 
                     <div class="form-group">
-                        <label for="quantity">Quantity</label>
-                        <input type="number" id="quantity" placeholder="1" min="1" required>
+                        <label for="message">Your Message</label>
+                        <textarea name="message" id="message" rows="5" placeholder="Describe the issue in detail..." required></textarea>
                     </div>
 
-                    <div class="form-group">
-                        <label for="email">Delivery Email</label>
-                        <input type="email" id="email" placeholder="Enter email to receive PIN(s)" required>
-                    </div>
-
-                    <button type="submit" class="primary-btn">Purchase Now</button>
+                    <button type="submit" class="primary-btn">Submit Request</button>
                 </form>
             </section>
         </main>
