@@ -47,6 +47,7 @@
 .exam-form input,
 .exam-form select,
 .support-form input,
+.support-form textarea,
 .support-form select {
     width: 100%;
     padding: 12px;
