@@ -19,7 +19,8 @@
 .airtime-form .form-group,
 .electricity-form .form-group,
 .tv-form .form-group,
-.exam-form .form-group {
+.exam-form .form-group,
+.support-form .form-group {
     margin-bottom: 20px;
 }
 
@@ -27,7 +28,8 @@
 .airtime-form label,
 .electricity-form label,
 .tv-form label,
-.exam-form label {
+.exam-form label,
+.support-form label {
     display: block;
     margin-bottom: 8px;
     font-weight: 600;
@@ -43,7 +45,9 @@
 .tv-form input,
 .tv-form select,
 .exam-form input,
-.exam-form select {
+.exam-form select,
+.support-form input,
+.support-form select {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
