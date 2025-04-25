@@ -15,11 +15,13 @@
     margin: 0 auto;
 }
 
-.data-form .form-group {
+.data-form .form-group,
+.airtime-form .form-group {
     margin-bottom: 20px;
 }
 
-.data-form label {
+.data-form label,
+.airtime-form label {
     display: block;
     margin-bottom: 8px;
     font-weight: 600;
@@ -27,7 +29,9 @@
 }
 
 .data-form input,
-.data-form select {
+.data-form select,
+.airtime-form input,
+.airtime-form select {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
