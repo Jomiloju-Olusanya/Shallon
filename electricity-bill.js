@@ -39,3 +39,15 @@ confirmPinBtn.addEventListener('click', function() {
 cancelPinBtn.addEventListener('click', function() {
   closePinModal();
 });
+
+confirmPinBtn.addEventListener('click', function() {
+    const enteredPin = document.getElementById('transactionPin').value;
+    if (enteredPin === correctPIN) {
+      closePinModal();
+      setTimeout(() => {
+        window.location.href = "success.html";
+      }, 500); // Smooth little delay
+    } else {
+      alert('Incorrect PIN! ❌ Please try again.');
+    }
+  });  

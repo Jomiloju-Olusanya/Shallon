@@ -1,0 +1,39 @@
+:root {
+    --primary-color: #d80000;
+    --secondary-color: #007aff;
+    --white: #fff;
+    --bg-light: #f4f4f4;
+    --text-dark: #333;
+    --primary-btn-color: #06375d;
+}
+
+.success-container {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.success-container h1 {
+    font-size: 36px;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.success-container p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.success-container a {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.success-container a:hover {
+    background-color: #0b4a82;
+}
