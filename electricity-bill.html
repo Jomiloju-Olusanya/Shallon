@@ -82,12 +82,26 @@
                         <input type="number" id="amount" placeholder="&#8358;1000" required>
                     </div>
 
-                    <button type="submit" class="primary-btn">Pay Now</button>
+                    <button id="payElectricityBtn" type="submit" class="primary-btn">Pay Now</button>
                 </form>
             </section>
         </main>
     </div>
 
-        <script src="dashboard.js"></script>
+    <!-- Transaction PIN Modal -->
+    <div class="modal" id="pinModal">
+        <div class="modal-content">
+            <h2>Enter Transaction PIN</h2>
+            <input type="password" id="transactionPin" maxlength="4" placeholder="Enter 4 digit PIN">
+            <div class="modal-buttons">
+                <button id="confirmPin">Confirm</button>
+                <button id="cancelPin">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="dashboard.js"></script>
+
+    <script src="electricity-bill.js"></script>
 </body>
 </html>

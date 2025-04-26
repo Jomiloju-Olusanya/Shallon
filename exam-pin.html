@@ -62,12 +62,26 @@
                         <input type="email" id="email" placeholder="Enter email to receive PIN(s)" required>
                     </div>
 
-                    <button type="submit" class="primary-btn">Purchase Now</button>
+                    <button id="buyExamPinBtn" type="submit" class="primary-btn">Purchase Now</button>
                 </form>
             </section>
         </main>
     </div>
 
+    <!-- Transaction PIN Modal -->
+    <div class="modal" id="pinModal">
+        <div class="modal-content">
+            <h2>Enter Transaction PIN</h2>
+            <input type="password" id="transactionPin" maxlength="4" placeholder="Enter 4 digit PIN">
+            <div class="modal-buttons">
+                <button id="confirmPin">Confirm</button>
+                <button id="cancelPin">Cancel</button>
+            </div>
+        </div>
+    </div>
+
     <script src="dashboard.js"></script>
+
+    <script src="exam-pin.js"></script>
 </body>
 </html>

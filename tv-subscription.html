@@ -68,12 +68,26 @@
                         <input type="tel" id="phone" placeholder="080XXXXXXXX" required>
                     </div>
 
-                    <button type="submit" class="primary-btn">Subscribe Now</button>
+                    <button id="payTvBtn" type="submit" class="primary-btn">Subscribe Now</button>
                 </form>
             </section>
         </main>
     </div>
 
+    <!-- Transaction PIN Modal -->
+    <div class="modal" id="pinModal">
+        <div class="modal-content">
+            <h2>Enter Transaction PIN</h2>
+            <input type="password" id="transactionPin" maxlength="4" placeholder="Enter 4 digit PIN">
+            <div class="modal-buttons">
+                <button id="confirmPin">Confirm</button>
+                <button id="cancelPin">Cancel</button>
+            </div>
+        </div>
+    </div>
+
     <script src="dashboard.js"></script>
+
+    <script src="tv-subscription.js"></script>
 </body>
 </html>
