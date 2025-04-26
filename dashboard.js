@@ -15,3 +15,28 @@ toggleBtn.addEventListener('click', () => {
     ? '<i class="fas fa-eye-slash"></i>' 
     : '<i class="fas fa-eye"></i>';
 });
+
+// Tabs switching
+const tabButtons = document.querySelectorAll(".tab-button");
+const tabContents = document.querySelectorAll(".tab-content");
+
+tabButtons.forEach(button => {
+  button.addEventListener("click", () => {
+    tabButtons.forEach(btn => btn.classList.remove("active"));
+    tabContents.forEach(content => content.style.display = "none");
+
+    button.classList.add("active");
+    document.getElementById(button.dataset.tab).style.display = "block";
+  });
+});
+
+// Edit Profile Info
+const editBtn = document.querySelector(".edit-btn");
+const saveBtn = document.querySelector(".save-btn");
+const inputs = document.querySelectorAll("#profile input");
+
+editBtn.addEventListener("click", () => {
+  inputs.forEach(input => input.disabled = false);
+  editBtn.style.display = "none";
+  saveBtn.style.display = "inline-block";
+});

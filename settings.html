@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings | Shallon</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="wallet.css">
+    <link rel="stylesheet" href="buy-data.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar Toggle for Mobile -->
+         <div class="mobile-header">
+            <button class="hamburger" id="sidebarToggle">&#9776;</button>
+            <div class="mobile-logo">Shallon</div>
+         </div>
+
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h2>Shallon</h2>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="dashboard.html" class="nav-link active">Home</a>
+                <a href="wallet.html">Wallet</a>
+                <a href="#">Savings</a>
+                <a href="#">Loans</a>
+                <a href="#">Transactions</a>
+                <a href="settings.html">Settings</a>
+                <a href="#">More</a>
+                <a href="index.html" class="logout">Logout</a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="wallet-header">
+                <h1>Settings</h1>
+            </header>
+
+            <div class="tabs-container">
+                <div class="tabs">
+                    <button class="tab-button active" data-tab="profile">Profile Info</button>
+                    <button class="tab-button" data-tab="security">Security Settings</button>
+                </div>
+
+                <div class="tab-content" id="profile" style="display: block;">
+                    <h2>Profile Information</h2>
+                    <form action="#" method="#" class="settings-form">
+                        <label for="name">Full Name</label>
+                        <input type="text" value="Jyay" disabled>
+
+                        <label for="email">Email Address</label>
+                        <input type="email" value="jyay@shallon.ng" disabled>
+
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" value="08121004547" disabled>
+
+                        <button type="button" class="edit-btn">Edit</button>
+                        <button type="submit" class="save-btn" style="display: none;">Save Changes</button>
+                    </form>
+                </div>
+
+                <div class="tab-content" id="security">
+                    <h2>Security Settings</h2>
+                    <form action="#" method="#" class="settings-form">
+                        <label for="old">Old Password</label>
+                        <input type="password">
+
+                        <label for="new">New Password</label>
+                        <input type="password">
+
+                        <label for="Confirm">Confirm New Password</label>
+                        <input type="password">
+
+                        <button type="submit" class="save-btn">Update Password</button>
+
+                        <hr>
+
+                        <label for="old">Old Transaction PIN</label>
+                        <input type="password" maxlength="4">
+
+                        <label for="new">New Transaction PIN</label>
+                        <input type="password" maxlength="4">
+
+                        <label for="confirm">Confimr New Transaction PIN</label>
+                        <input type="password" maxlength="4">
+
+                        <button type="submit" class="save-btn">Update PIN</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+    <!-- Transaction PIN Modal 
+    <div class="modal" id="pinModal">
+        <div class="modal-content">
+            <h2>Enter Transaction PIN</h2>
+            <input type="password" id="transactionPin" maxlength="4" placeholder="Enter 4 digit PIN">
+            <div class="modal-buttons">
+                <button id="confirmPin">Confirm</button>
+                <button id="cancelPin">Cancel</button>
+            </div>
+        </div>
+    </div> -->
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
